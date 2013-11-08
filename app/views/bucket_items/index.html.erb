@@ -1,0 +1,16 @@
+
+
+<h1> Bucket List</h1>
+
+    <%= form_for @bucket_item do |f| %>
+        
+        <%= f.text_field :title, :placeholder => "Title" %><br>
+        
+        <%= f.text_area  :description, :placeholder => "Description" %>
+        
+        <%= f.submit %>
+    <% end %>
+
+
+<div id="bucket-items">
+</div>
